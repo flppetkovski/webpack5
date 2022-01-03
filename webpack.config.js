@@ -14,6 +14,9 @@ module.exports = {
   mode,
   target,
   module: {
+    output: {
+      path: path.resolve(__dirname, "dist"),
+    },
     rules: [
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
